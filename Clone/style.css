@@ -2,7 +2,8 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Segoe UI", sans-serif;
+  /* font-family: "Segoe UI", sans-serif; */
+  font-family: "Figtree", sans-serif;
   /* font-family: Arial, sans-serif; */
   /* padding-bottom: 20px; */
 }
@@ -13,6 +14,7 @@ header {
 
 /* Top Bar */
 .top-bar {
+  position: sticky;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -22,9 +24,11 @@ header {
 }
 
 .logo {
-  font-size: 28px;
+  /* font-size: 28px;
   font-weight: bold;
-  letter-spacing: 2px;
+  letter-spacing: 2px; */
+  width: 152px;
+  height: 62px;
 }
 
 /* Button */
@@ -110,9 +114,9 @@ header {
 
 .login-btn {
   padding: 6px 14px;
-  border: 1px solid #0b5c66;
+  border: 1px solid #216bda;
   background: transparent;
-  color: #0b5c66;
+  color: #045b66;
   border-radius: 4px;
   cursor: pointer;
 }
@@ -120,7 +124,7 @@ header {
 .signup-btn {
   padding: 6px 14px;
   border: none;
-  background: #0b5c66;
+  background: #216bda;
   color: white;
   border-radius: 4px;
   cursor: pointer;
@@ -128,7 +132,14 @@ header {
 
 /* Navigation Bar */
 .nav-bar {
-  background: linear-gradient(to right, #0b5c66, #1fc8c8);
+  background: linear-gradient(
+    to right,
+    #1ba90e 10%,
+    #8ac329 30%,
+    rgb(220, 159, 47) 60%,
+    #1fc8c8 80%,
+    #1f27c8 100%
+  );
   display: flex;
   justify-content: center;
   gap: 48px;
@@ -210,7 +221,13 @@ img {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: linear-gradient(to right, #0b5c66, #25d6d6);
+  background: linear-gradient(
+    to left,
+    #1f27c8 0%,
+    #1fc8c8,
+    #1fc8c8,
+    #1f27c8 90%
+  );
   padding: 20px 40px;
   color: #fff;
 }
@@ -242,12 +259,16 @@ img {
 }
 /* notes */
 
-/* Course */
+/* ------------Course----------------- */
 .course-section {
   padding: 8px 0px 43px 34px;
   /* background: #00000029; */
 }
 .course-section h2 {
+  font-family: "Figtree", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+
   color: black;
   margin-bottom: 20px;
   padding: 40px 41px 0px 40px;
@@ -368,9 +389,244 @@ hr {
   color: #888;
   text-decoration: line-through;
 }
+/* ------------Courses----------------- */
 
-/* Recent Courses */
+/* ---------- about Section----------  */
+.about-section {
+  max-width: 1200px;
+  margin: auto;
+  padding: 25px;
+}
+
+.about-card {
+  background: #fff6ee;
+  border-radius: 40px;
+  padding: 50px;
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  gap: 40px;
+  align-items: center;
+}
+
+/* LEFT */
+.about-content {
+  position: relative;
+}
+
+.about-content h5 {
+  font-family: "Averia Gruesa Libre", system-ui;
+  font-style: oblique;
+  font-size: 24px;
+  margin-bottom: 0px;
+}
+
+.about-content h1 {
+  color: #ff6a00;
+  font-size: 40px;
+  margin-bottom: 10px;
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+}
+
+.about-content h3 {
+  font-size: 20px;
+  margin-bottom: 20px;
+  color: #333;
+}
+.about-content strong {
+  font-family: "Averia Gruesa Libre", system-ui;
+}
+
+.about-content p {
+  font-size: 15px;
+  line-height: 1.5;
+  color: #444;
+  margin-bottom: 15px;
+}
+
+/* BUTTONS */
+.btn-group {
+  margin-top: 25px;
+  display: flex;
+  gap: 15px;
+}
+
+.btn {
+  padding: 12px 25px;
+  border-radius: 25px;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.btn.primary {
+  background: #ff6a00;
+  color: #fff;
+}
+
+.btn.secondary {
+  background: #000;
+  color: #fff;
+}
+
+/* RIGHT */
+.about-image {
+  position: relative;
+}
+
+.about-image img {
+  width: 100%;
+  border-radius: 25px;
+  object-fit: cover;
+}
+
+/* SOCIAL */
+.social {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-top: 20px;
+  padding-left: 95px;
+}
+
+.social span {
+  font-size: 14px;
+  color: #333;
+  margin-right: 10px;
+}
+
+.social a {
+  width: 35px;
+  height: 35px;
+  background: #ff6a00;
+  color: #fff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  font-size: 14px;
+}
+/* ---------- about Section----------  */
+/* --------- why choose Us-----------  */
+.why-choose {
+  position: relative;
+  height: 44rem;
+  padding: 100px 0px;
+  background-image: url(photos/ai-generated-9130747_1920.png);
+  color: #fff;
+  overflow: hidden;
+  text-align: center;
+}
+
+/* Header content */
+.content {
+  position: relative;
+  z-index: 2;
+  max-width: 800px;
+  margin: auto;
+}
+
+.WCU-tag {
+  font-family: "Averia Gruesa Libre", system-ui;
+  color: #ff6a00;
+  display: block;
+  margin-bottom: 0px;
+  font-size: 29px;
+}
+
+.content h2 {
+  font-family: "Figtree", sans-serif;
+  font-size: 42px;
+  margin-bottom: 15px;
+}
+
+.content p {
+  font-family: "Averia Gruesa Libre", system-ui;
+  color: #aaa;
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+/* Floating chart */
+.floating-chart {
+  position: absolute;
+  top: 7px;
+  right: 180px;
+  width: 328px;
+  z-index: 1;
+  opacity: 0.6;
+}
+
+/* Stats cards */
+.stats-card-full {
+  padding: 0px 158px 0px 190px;
+}
+.stats {
+  position: relative;
+  z-index: 2;
+  margin-top: 80px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 25px;
+}
+
+.stat-card {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(25px);
+  border-radius: 20px;
+  padding: 25px 32px;
+  text-align: left;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  transition: 0.3s;
+}
+
+.stat-card:hover {
+  transform: translateY(-8px);
+  border-color: #ff6a00;
+}
+
+.stat-card h3 {
+  text-align: center;
+  color: #ff6a00;
+  font-size: 38px;
+  margin-bottom: 10px;
+}
+
+.stat-card h4 {
+  font-size: 17px;
+  margin-bottom: 10px;
+}
+
+.stat-card p {
+  font-size: 15px;
+  color: #aaa;
+  line-height: 1.5;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .stats {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 500px) {
+  .stats {
+    grid-template-columns: 1fr;
+  }
+  .content h2 {
+    font-size: 28px;
+  }
+}
+/* --------- why choose Us-----------  */
+
+/*-----------Recent Courses--------------- */
 .recent button {
+  font-family: "Averia Gruesa Libre", system-ui;
+  font-style: normal;
   padding: 13px;
   /* padding-right: 20px; */
   border: none;
@@ -389,6 +645,7 @@ hr {
   padding: 14px 0px 26px 52px;
 }
 .recentCourses h2 {
+  font-family: "Figtree", sans-serif;
   padding: 22px;
   font-weight: bold;
 }
@@ -720,13 +977,21 @@ hr {
 
 .instructor-left {
   width: 35%;
-  background: #ff4d4d;
-  color: white;
+  background: linear-gradient(
+    to bottom right,
+    orange,
+    rgb(237, 234, 71),
+    orange
+  );
+  color: rgb(0, 0, 0);
   text-align: center;
   padding: 60px 14px 60px 1px;
 }
 
 .instructor-left h2 {
+  font-family: "Averia Gruesa Libre", system-ui;
+  font-weight: 400;
+  font-style: normal;
   font-size: 28px;
   margin-bottom: 10px;
 }
@@ -738,8 +1003,8 @@ hr {
 
 .instructor-left button {
   padding: 12px 25px;
-  background: white;
-  color: #ff4d4d;
+  background: rgb(0, 0, 0);
+  color: #fffcfc;
   border: none;
   border-radius: 6px;
   font-size: 16px;
@@ -1189,6 +1454,8 @@ hr {
 }
 
 .logo-footer {
+  width: 152px;
+  height: 62px;
   font-size: 26px;
   font-weight: 700;
   letter-spacing: 2px;
