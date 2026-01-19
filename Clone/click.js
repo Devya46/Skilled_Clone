@@ -1,6 +1,12 @@
 // <!-- ===== FAQ SECTION ===== -->
 const faqItems = document.querySelectorAll(".ttx-faq-item");
 
+// 🔹 ADDED: Make sure nothing is active when page loads
+faqItems.forEach((item) => {
+  item.classList.remove("active");
+  item.querySelector(".ttx-faq-icon").textContent = "+";
+});
+
 faqItems.forEach((item) => {
   const btn = item.querySelector(".ttx-faq-btn");
 
@@ -19,4 +25,5 @@ faqItems.forEach((item) => {
     icon.textContent = item.classList.contains("active") ? "−" : "+";
   });
 });
+
 // <!-- ===== FAQ SECTION ===== -->
