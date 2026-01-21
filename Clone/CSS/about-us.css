@@ -100,11 +100,10 @@ header {
 .p2p-whatwedo-dark {
   width: 100%;
   padding: 50px 10%;
-  background: #020024;
   background: radial-gradient(
     circle,
-    rgba(2, 0, 36, 1) 0%,
-    rgba(9, 9, 121, 1) 100%,
+    rgb(7 4 51 / 74%) 0%,
+    rgb(22 22 217) 100%,
     rgba(0, 0, 0, 1) 100%
   );
   font-family: Arial, sans-serif;
@@ -368,7 +367,7 @@ header {
 .p2p-impact {
   width: 100%;
   padding: 90px 10%;
-  background: #bcc6d4;
+  background: #d5f6d9;
   display: flex;
   gap: 50px;
   align-items: center;
@@ -394,7 +393,7 @@ header {
 }
 
 .impact-left h2 span {
-  color: #6c63ff;
+  color: #2424ac;
 }
 
 /* Right boxes */

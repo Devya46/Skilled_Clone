@@ -286,7 +286,7 @@ header {
 /* <!-- Course Journey Section -->  */
 /* <!-- Certification Section -->  */
 .cert-section {
-  padding: 100px 54px;
+  padding: 15px 54px;
   background: #ffffff;
   font-family: "Segoe UI", sans-serif;
 }
@@ -476,3 +476,159 @@ header {
   }
 }
 /* <!-- Mobile App Promo Section -->  */
+/* <!-- Enquiry Section -->  */
+.enq-section {
+  padding: 80px 112px;
+  font-family: "Segoe UI", sans-serif;
+}
+
+.enq-container {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  gap: 50px;
+  align-items: center;
+}
+
+/* LEFT CARD */
+.enq-left {
+  width: 45%;
+  height: 37rem;
+  background: #0069ff08;
+  border-radius: 35px;
+  padding: 15px;
+  position: relative;
+  text-align: center;
+}
+
+.mentor-img {
+  width: 100%;
+  height: 34rem;
+  border-radius: 35px;
+}
+
+/* Badges */
+.badgee {
+  position: absolute;
+  background: #ffffff80;
+  color: #000;
+  padding: 8px 14px;
+  border-radius: 20px;
+  font-size: 13px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+}
+
+.ratingg {
+  top: 52px;
+  left: 23px;
+}
+
+.online {
+  top: 131px;
+  right: 17px;
+}
+
+.happy {
+  bottom: 90px;
+  left: 20px;
+}
+
+.mentor {
+  bottom: 50px;
+  right: 20px;
+}
+
+.avatars img {
+  width: 24px;
+  border-radius: 50%;
+  margin-left: -8px;
+  border: 2px solid #fff;
+}
+
+/* RIGHT FORM */
+.enq-right {
+  width: 55%;
+}
+
+.enq-right h2 {
+  font-size: 28px;
+  margin-bottom: 5px;
+}
+
+.enq-right p {
+  color: #666;
+  margin-bottom: 25px;
+}
+.avatars {
+  display: flex;
+  justify-content: center;
+  gap: 2px;
+}
+
+form label {
+  font-size: 14px;
+  font-weight: 500;
+  margin: 12px 0 6px;
+  display: block;
+}
+
+form input,
+form select {
+  width: 100%;
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  outline: none;
+}
+
+.row {
+  display: flex;
+  gap: 15px;
+}
+
+.row div {
+  flex: 1;
+}
+
+.check {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin: 12px 0;
+}
+
+.check input {
+  width: 16px;
+  height: 16px;
+  cursor: pointer;
+}
+
+.check label {
+  font-size: 14px;
+  color: #333;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+button {
+  width: 100%;
+  background: #0069ff;
+  color: #fff;
+  border: none;
+  padding: 14px;
+  border-radius: 10px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .enq-container {
+    flex-direction: column;
+  }
+  .enq-left,
+  .enq-right {
+    width: 100%;
+  }
+}
+/* <!-- Enquiry Section -->  */
