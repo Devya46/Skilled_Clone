@@ -1,0 +1,286 @@
+/* ================= RESET ================= */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", sans-serif;
+}
+
+body {
+  background: #f6f9fc;
+  color: #222;
+  line-height: 1.6;
+}
+
+/* ================= COMMON ================= */
+.IS-btn-primary {
+  background: #1fb59f;
+  color: #fff;
+  border: none;
+  padding: 12px 22px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: 0.3s;
+}
+.IS-btn-primary:hover {
+  background: #15907e;
+}
+
+.IS-btn-secondary {
+  background: #fff;
+  color: #1fb59f;
+  border: 2px solid #1fb59f;
+  padding: 12px 22px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: 0.3s;
+}
+.IS-btn-secondary:hover {
+  background: #1fb59f;
+  color: #fff;
+}
+
+/* ================= IS-HERO ================= */
+.IS-hero {
+  background: linear-gradient(135deg, #e9fff8, #c6f3e8);
+  padding: 60px 20px;
+}
+
+.IS-hero-container {
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.IS-hero-text {
+  flex: 1;
+}
+
+.IS-hero-text h1 {
+  font-size: 2.5rem;
+  margin-bottom: 15px;
+}
+
+.IS-hero-text p {
+  color: #555;
+  margin-bottom: 15px;
+}
+
+.IS-hero-rating {
+  margin-bottom: 20px;
+  color: #f5a623;
+}
+
+.IS-hero-image {
+  flex: 1;
+}
+.IS-hero-image img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+/* ================= IS-COURSE ================= */
+.IS-course {
+  max-width: 1200px;
+  margin: 50px auto;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 30px;
+  padding: 0 20px;
+}
+
+/* LEFT SIDE */
+.IS-learn,
+.IS-content,
+.IS-instructor,
+.IS-review {
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 25px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.IS-learn h2,
+.IS-content h2,
+.IS-instructor h2,
+.IS-review h2 {
+  margin-bottom: 10px;
+}
+
+.IS-show-more {
+  margin-top: 10px;
+  background: transparent;
+  border: none;
+  color: #1fb59f;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+/* ================= ACCORDION ================= */
+.IS-accordion-item {
+  border: 1px solid #eee;
+  border-radius: 6px;
+  margin-bottom: 10px;
+  overflow: hidden;
+}
+
+.IS-accordion-header {
+  background: #f2fdfb;
+  padding: 12px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.IS-accordion-body {
+  padding: 12px;
+  display: none;
+  background: #fff;
+}
+
+/* ================= INSTRUCTOR ================= */
+.IS-instructor-box {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.IS-instructor-box img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+}
+
+/* ================= REVIEW ================= */
+.IS-review-box {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.IS-review-box img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+/* ================= PRICE CARD ================= */
+.IS-price-card {
+  background: #fff;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  position: sticky;
+  top: 20px;
+  height: fit-content;
+}
+
+.IS-price-card h3 {
+  font-size: 2rem;
+  margin-bottom: 15px;
+  color: #1fb59f;
+}
+
+.IS-price-card button {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.IS-price-card ul {
+  list-style: none;
+  margin-top: 15px;
+}
+
+.IS-price-card ul li {
+  margin-bottom: 8px;
+  color: #444;
+}
+
+/* ================= IS-RELATED ================= */
+.IS-related {
+  padding: 50px 20px;
+  background: #fff;
+}
+
+.IS-related h2 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.IS-related-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.IS-related-card {
+  background: #f9f9f9;
+  padding: 15px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.IS-related-card img {
+  width: 100%;
+  border-radius: 6px;
+  margin-bottom: 10px;
+}
+
+/* ================= IS-NEWSLETTER ================= */
+.IS-newsletter {
+  background: #1fb59f;
+  color: #fff;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.IS-newsletter input {
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  width: 250px;
+  margin-right: 10px;
+}
+
+/* ================= IS-FOOTER ================= */
+.IS-footer {
+  background: #111;
+  color: #aaa;
+  text-align: center;
+  padding: 15px;
+}
+
+/* ================= RESPONSIVE ================= */
+@media (max-width: 900px) {
+  .IS-hero-container {
+    flex-direction: column;
+  }
+
+  .IS-course {
+    grid-template-columns: 1fr;
+  }
+
+  .IS-price-card {
+    position: relative;
+    top: 0;
+  }
+}
+
+@media (max-width: 500px) {
+  .IS-hero-text h1 {
+    font-size: 1.8rem;
+  }
+
+  .IS-newsletter input {
+    width: 100%;
+    margin: 10px 0;
+  }
+}

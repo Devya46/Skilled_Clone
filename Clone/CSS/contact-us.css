@@ -1,0 +1,214 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* font-family: "Segoe UI", sans-serif; */
+  font-family: "Figtree", sans-serif;
+  /* font-family: Arial, sans-serif; */
+  /* padding-bottom: 20px; */
+  align-items: center;
+  scroll-behavior: smooth;
+}
+html,
+body {
+  overflow-x: hidden;
+}
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+header {
+  width: 100%;
+}
+
+/* ------ Contact- Us--------  */
+.p2p-contact-section {
+  background: linear-gradient(135deg, #1fc8c8b0, #4043ea);
+  padding: 84px 8%;
+  font-family: "Montserrat", sans-serif;
+}
+
+/* TOP PART */
+.p2p-top {
+  display: flex;
+  /* gap: 30px; */
+  margin-bottom: 40px;
+}
+
+.p2p-photo {
+  flex: 2;
+  border-radius: 20px 0 0 20px; /* top-left, top-right, bottom-right, bottom-left */
+  overflow: hidden;
+}
+.p2p-photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.p2p-form {
+  flex: 1;
+  background: #ecfdfe;
+  padding: 46px;
+  border-radius: 20px;
+  box-shadow: 0 10px 25px rgb(0 0 0);
+  margin: -70px;
+  margin-right: 15px;
+}
+
+.p2p-logo {
+  width: 133px;
+  margin-bottom: 10px;
+}
+
+.p2p-form h2 {
+  font-size: 26px;
+}
+.p2p-form p {
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+.p2p-row {
+  display: flex;
+  gap: 12px;
+}
+
+.p2p-form input,
+.p2p-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 8px 0;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+}
+
+.p2p-form button {
+  width: 100%;
+  margin-top: 15px;
+  padding: 12px;
+  border: none;
+  border-radius: 25px;
+  background: black;
+  color: #fff;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+/* LONG DETAILS BOX */
+.p2p-details-box {
+  background: #ecfdfe;
+  border-radius: 20px;
+  padding: 25px;
+  box-shadow: 0 10px 25px rgb(0 0 0);
+  width: 100%;
+  margin-top: 76px;
+}
+
+.p2p-details-box h3 {
+  font-size: 22px;
+  margin-bottom: 10px;
+  color: #2461e5;
+}
+
+.p2p-details-box p {
+  font-size: 14px;
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+.p2p-details {
+  display: flex;
+  font-size: 16px;
+  gap: 36px;
+  flex-wrap: wrap;
+}
+
+/* -----------Contact-us--------  */
+
+/* ----------------- Mobile View (max-width: 768px) ----------------- */
+@media (max-width: 768px) {
+  .p2p-contact-section {
+    padding: 40px 5%;
+  }
+
+  /* Stack image & form */
+  .p2p-top {
+    flex-direction: column;
+  }
+
+  .p2p-photo {
+    border-radius: 20px;
+    height: 220px;
+  }
+
+  .p2p-photo img {
+    height: 100%;
+  }
+
+  .p2p-form {
+    margin: 20px 0 0 0;
+    padding: 25px;
+    border-radius: 15px;
+  }
+
+  .p2p-form h2 {
+    font-size: 22px;
+  }
+
+  .p2p-form p {
+    font-size: 13px;
+  }
+
+  /* Inputs stack properly */
+  .p2p-row {
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .p2p-form input,
+  .p2p-form textarea {
+    font-size: 14px;
+  }
+
+  .p2p-form button {
+    font-size: 14px;
+  }
+
+  /* Details box */
+  .p2p-details-box {
+    margin-top: 30px;
+    padding: 20px;
+  }
+
+  .p2p-details {
+    flex-direction: column;
+    gap: 12px;
+    font-size: 14px;
+  }
+}
+
+/* ----------------- Small Mobile (max-width: 480px) ----------------- */
+@media (max-width: 480px) {
+  .p2p-logo {
+    width: 100px;
+  }
+
+  .p2p-form {
+    padding: 20px;
+  }
+
+  .p2p-form h2 {
+    font-size: 20px;
+  }
+
+  .p2p-details-box h3 {
+    font-size: 18px;
+  }
+
+  .p2p-details-box p {
+    font-size: 13px;
+  }
+}
