@@ -22,7 +22,7 @@
         <img class="logo" src="photos/Path2Profit_Logo.png" alt="">
 
         <div class="top-right">
-          <button class="login-btn">Login</button>
+          <button onclick="href='about-us.html'" class="login-btn">Login</button>
           <button class="signup-btn">Signup</button>
         </div>
       </div>
@@ -31,15 +31,21 @@
 
       <!-- Navigation Bar -->
       <nav class="nav-bar">
-        <a href="#"><i class="fa-solid fa-briefcase"></i> Equity Markets</a>
-        <a href="#"><i class="fa-solid fa-lock"></i> Investing</a>
-        <a href="#"><i class="fa-solid fa-arrow-trend-up"></i> Trading</a>
-        <a href="#"><i class="fa-solid fa-desktop"></i> Mutual Funds</a>
-        <a href="#"
-          ><i class="fa-solid fa-chart-line"></i> Financial Modelling</a
-        >
-        <a href="#"
-          ><i class="fa-solid fa-graduation-cap"></i> NISM Certification</a>
+        <a href="index.html"><i class="fa-solid fa-briefcase"></i> Home</a>
+        <a href="about-us.html"><i class="fa-solid fa-lock"></i> About Us</a>
+        <div class="nav-dropdown">
+    <a href="#"><i class="fa-solid fa-arrow-trend-up"></i> Courses 
+      <i class="fa-solid fa-caret-down"></i>
+    </a>
+    <div class="dropdown-content">
+      <a href="Course-Intraday Setup page.html">Intraday Setup</a>
+      <a href="Course-Hero Zero Setup.html">Hero Zero Setup</a>
+      <a href="Course-Nifty and Banknifty.html">Nifty and Banknifty</a>
+      <a href="Course-Power Play.html">Power Play</a>
+    </div>
+  </div>
+        <a href="#"><i class="fa-solid fa-desktop"></i> FAQ </a>
+        <a href="Contact-Us.html"><i class="fa-solid fa-chart-line"></i>Contact Us</a>
       </nav>
     </header>
     <!-- HEADER  -->
@@ -1421,11 +1427,11 @@ them suitable for beginners and professionals alike.
         <div class="footer-box">
           <h3>Company Overview</h3>
           <ul>
-            <li><a href="#">About Us</a></li>
-            <li><a href="#">Our Services</a></li>
-            <li><a href="#">Our Feature</a></li>
-            <li><a href="#">Alumni</a></li>
-            <li><a href="#">Blog</a></li>
+            <li><a href="about-us.html">About Us</a></li>
+            <li><a href="Course-Intraday Setup page.html">Intraday Setup</a></li>
+            <li><a href="Course-Hero Zero Setup.html">Hero Zero Setup</a></li>
+            <li><a href="Course-Nifty and Banknifty.html">Nifty and Banknifty</a></li>
+            <li><a href="Course-Power Play.html">Power Play</a></li>
           </ul>
         </div>
 
@@ -1434,8 +1440,9 @@ them suitable for beginners and professionals alike.
           
           <h3>Support</h3>
           <ul>
-            <li><a href="#">Contact Us</a></li>
-            <li><a href="#">Help & Support</a></li>
+            <li><a href="Contact-Us.html">Contact Us</a></li>
+            <li><a href="privacyPolicy.html">Privacy Policy</a></li>
+            <li><a href="terms&conditions.html">Term & Conditions</a></li>
           </ul>
         </div>
 
@@ -1476,5 +1483,6 @@ them suitable for beginners and professionals alike.
 
            <script src="script.js"></script>
            <script src="click.js"></script>
+           <!-- <script src="dropdown.js"></script> -->
   </body>
 </html>

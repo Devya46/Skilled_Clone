@@ -141,6 +141,84 @@ img {
 
 /* Navigation Bar */
 .nav-bar {
+  display: flex;
+  gap: 25px;
+  align-items: center;
+}
+
+/* Dropdown wrapper */
+.nav-dropdown {
+  position: relative;
+}
+
+/* Dropdown menu */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: #111;
+  min-width: 200px;
+  border-radius: 5px;
+  z-index: 999;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Links inside dropdown */
+.dropdown-content a {
+  display: block;
+  padding: 10px 15px;
+  color: #fff;
+  text-decoration: none;
+}
+
+.dropdown-content a:hover {
+  background: #ff6a00;
+  color: white;
+}
+
+/* Show dropdown on hover */
+.nav-dropdown.active .dropdown-content {
+  display: block;
+}
+
+/* Optional: make Courses look like other nav links */
+.nav-bar a {
+  color: #fff;
+  text-decoration: none;
+  padding: 0px 15px;
+}
+.nav-dropdown {
+  position: relative;
+}
+
+/* Make dropdown touch the parent */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  top: 100%; /* directly below Courses */
+  left: 0;
+  background: #111;
+  min-width: 200px;
+  border-radius: 5px;
+  z-index: 999;
+  padding-top: 5px; /* creates safe hover area */
+}
+
+.nav-dropdown:focus-within .dropdown-content {
+  display: block;
+}
+
+.nav-dropdown a {
+  text-decoration: none;
+  outline: none;
+  cursor: pointer;
+  padding: 10px 12px;
+}
+.dropdown-content a {
+  padding: 10px 10px;
+}
+.nav-bar {
   background: linear-gradient(
     to right,
     #1ba90e 10%,
@@ -152,22 +230,25 @@ img {
   display: flex;
   justify-content: center;
   gap: 48px;
-  padding: 20px 0;
+  padding: 8px 0;
 }
 
 .nav-bar a {
   color: white;
-  text-decoration: none;
   font-size: 18px;
   display: flex;
   align-items: center;
-  gap: 6px;
+  gap: 10px;
   font-weight: 500;
+  padding: 10px;
 }
 
 .nav-bar a:hover {
   text-decoration: underline;
+  /* font-size: 22px; */
+  /* color: #000; */
 }
+/* ---- Nav Bar -----  */
 .slide img {
   width: 100%;
   height: 100%;
@@ -2041,6 +2122,9 @@ hr {
   color: #ffffff;
   position: relative;
   top: -34px;
+}
+.footer-bottom {
+  color: white;
 }
 
 /* footer -------------------------------- */
