@@ -1,0 +1,63 @@
+/* FAQ Header */
+.faq-header {
+  background: #d5f6d9;
+  color: #090909;
+  padding: 59px 11% 64px;
+}
+
+.faq-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: #1c1c1c;
+  color: #fff;
+  padding: 8px 16px;
+  border-radius: 30px;
+  font-size: 13px;
+  letter-spacing: 0.5px;
+  margin-bottom: 25px;
+}
+
+.faq-header h1 {
+  font-size: 48px;
+  line-height: 1.2;
+  font-weight: 700;
+}
+/* FAQ Header */
+/* Need More Help */
+.faq-help {
+  background: #d5f6d9;
+  color: #090909;
+  padding: 59px 11% 64px;
+}
+
+.faq-help h2 {
+  font-size: 36px;
+  margin-bottom: 15px;
+}
+
+.faq-help p {
+  color: #545050;
+  max-width: 600px;
+  line-height: 1.6;
+  margin-bottom: 30px;
+}
+
+.faq-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: #4f6bff;
+  color: #fff;
+  padding: 12px 22px;
+  border-radius: 25px;
+  font-size: 14px;
+  text-decoration: none;
+  transition: 0.3s ease;
+}
+
+.faq-btn:hover {
+  color: #3a55e6;
+  background: #fff;
+}
+/* Need More Help */
