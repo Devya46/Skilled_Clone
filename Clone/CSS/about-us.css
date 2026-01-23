@@ -220,7 +220,7 @@ header {
 }
 
 /* Background Images */
-.whatwedo-left,
+/* .whatwedo-left,
 .whatwedo-right {
   position: absolute;
   top: 0;
@@ -228,16 +228,16 @@ header {
   height: 100%;
   background-size: cover;
   background-repeat: no-repeat;
-  opacity: 0.45;
-}
-.whatwedo-left {
+  opacity: 0.45; */
+/* } */
+/* .whatwedo-left {
   left: 0;
   background-image: url("photos/Ellipse-4.webp");
 }
 .whatwedo-right {
   right: 0;
   background-image: url("photos/Ellipse-4.webp");
-}
+} */
 /* What We Do Section */
 
 /* Mission Section - Light Theme */
