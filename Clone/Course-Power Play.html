@@ -29,32 +29,43 @@
       <div class="top-bar">
         <img class="logo" src="photos/Path2Profit_Logo.png" alt="" />
 
+        <div class="menu-icon" id="menuIcon">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+
         <div class="top-right">
-          <button class="login-btn">Login</button>
+          <button onclick="location.href = 'about-us.html'" class="login-btn">
+            Login
+          </button>
           <button class="signup-btn">Signup</button>
         </div>
       </div>
 
-      <!-- Navigation Bar -->
-      <nav class="nav-bar">
+      <nav class="nav-bar" id="mobileNav">
         <a href="index.html"><i class="fa-solid fa-briefcase"></i> Home</a>
         <a href="about-us.html"><i class="fa-solid fa-lock"></i> About Us</a>
         <div class="nav-dropdown">
-    <a href="#"><i class="fa-solid fa-arrow-trend-up"></i> Courses 
-      <i class="fa-solid fa-caret-down"></i>
-    </a>
-    <div class="dropdown-content">
-      <a href="Course-Intraday Setup page.html">Intraday Setup</a>
-      <a href="Course-Hero Zero Setup.html">Hero Zero Setup</a>
-      <a href="Course-Nifty and Banknifty.html">Nifty and Banknifty</a>
-      <a href="Course-Power Play.html">Power Play</a>
-    </div>
-  </div>
+          <a href="#"
+            ><i class="fa-solid fa-arrow-trend-up"></i> Courses
+            <i class="fa-solid fa-caret-down"></i>
+          </a>
+          <div class="dropdown-content">
+            <a href="Course-Intraday Setup page.html">Intraday Setup</a>
+            <a href="Course-Hero Zero Setup.html">Hero Zero Setup</a>
+            <a href="Course-Nifty and Banknifty.html">Nifty and Banknifty</a>
+            <a href="Course-Power Play.html">Power Play</a>
+          </div>
+        </div>
         <a href="Faq.html"><i class="fa-solid fa-desktop"></i> FAQ </a>
-        <a href="Contact-Us.html"><i class="fa-solid fa-chart-line"></i> Contact Us</a>
+        <a href="Contact-Us.html"
+          ><i class="fa-solid fa-chart-line"></i>Contact Us</a
+        >
+        <div class="mobile-auth">
+          <button class="login-btn">Login</button>
+          <button class="signup-btn">Signup</button>
+        </div>
       </nav>
     </header>
-    
     <!-- HEADER  -->
     <!-- Trade Like a Pro Section -->
     <section class="tlp-section">
@@ -67,8 +78,9 @@
           <h1 class="tlp-title">POWER PLAY <span>SETUP</span></h1>
 
           <p class="tlp-subtext">
-            The Power Play Strategy is an advanced intraday and scalping framework designed to identify high-impact
-market moves, where smart money dominates and momentum offers strong trading opportunities.
+            The Power Play Strategy is an advanced intraday and scalping
+            framework designed to identify high-impact market moves, where smart
+            money dominates and momentum offers strong trading opportunities.
           </p>
 
           <div class="tlp-buttons">
@@ -96,17 +108,15 @@ market moves, where smart money dominates and momentum offers strong trading opp
             </div>
           </div>
 
-          <h2 class="tlp-heading">
-            TRENDING STOCK MARKET COURSE
-          </h2>
-          <p class="tlp-highlight">
-            Best Intraday & Scalping Course
-          </p>
+          <h2 class="tlp-heading">TRENDING STOCK MARKET COURSE</h2>
+          <p class="tlp-highlight">Best Intraday & Scalping Course</p>
 
           <p>
-            The Power Play Course focuses on market psychology, momentum, and structure disruption to help traders
-execute trades with precision and confidence. It is designed for traders who want to capture explosive intraday
-moves, avoid retail traps, and trade in alignment with smart money.
+            The Power Play Course focuses on market psychology, momentum, and
+            structure disruption to help traders execute trades with precision
+            and confidence. It is designed for traders who want to capture
+            explosive intraday moves, avoid retail traps, and trade in alignment
+            with smart money.
           </p>
 
           <p>
@@ -118,7 +128,7 @@ moves, avoid retail traps, and trade in alignment with smart money.
 
         <!-- Right Card -->
         <div class="tlp-right">
-          <img src="photos/mainscreen4.jpg" class="tlp-image" />
+          <img src="photos/WEB PAGE 04.png" class="tlp-image" />
 
           <button class="btn-enroll">Enroll Now</button>
           <button class="btn-enquire">Enquire Now</button>
@@ -156,79 +166,77 @@ moves, avoid retail traps, and trade in alignment with smart money.
         <h2 class="cj-title">COURSE JOURNEY</h2>
 
         <div class="cj-timeline">
+          <!-- Day 1 -->
+          <div class="cj-item">
+            <div class="cj-dot"></div>
+            <div class="cj-content">
+              <h3>Day 1</h3>
+              <ul>
+                <li>Market Psychology & Climactic Point</li>
+                <li>Market Behaviour & Climactic Points</li>
+                <li>Volume & Momentum Analysis</li>
+                <li>Retail FOMO vs Smart Money</li>
+              </ul>
+            </div>
+          </div>
 
-  <!-- Day 1 -->
-  <div class="cj-item">
-    <div class="cj-dot"></div>
-    <div class="cj-content">
-      <h3>Day 1</h3>
-      <ul>
-        <li>Market Psychology & Climactic Point</li>
-        <li>Market Behaviour & Climactic Points</li>
-        <li>Volume & Momentum Analysis</li>
-        <li>Retail FOMO vs Smart Money</li>
-      </ul>
-    </div>
-  </div>
+          <!-- Day 2 -->
+          <div class="cj-item">
+            <div class="cj-dot"></div>
+            <div class="cj-content">
+              <h3>Day 2</h3>
+              <ul>
+                <li>Setup Disruption & Trap Zones</li>
+                <li>Trend Breaks & Support/Resistance Failure</li>
+                <li>Setup Disruption Logic</li>
+                <li>Identifying Trader Traps</li>
+              </ul>
+            </div>
+          </div>
 
-  <!-- Day 2 -->
-  <div class="cj-item">
-    <div class="cj-dot"></div>
-    <div class="cj-content">
-      <h3>Day 2</h3>
-      <ul>
-        <li>Setup Disruption & Trap Zones</li>
-        <li>Trend Breaks & Support/Resistance Failure</li>
-        <li>Setup Disruption Logic</li>
-        <li>Identifying Trader Traps</li>
-      </ul>
-    </div>
-  </div>
+          <!-- Day 3 -->
+          <div class="cj-item">
+            <div class="cj-dot"></div>
+            <div class="cj-content">
+              <h3>Day 3</h3>
+              <ul>
+                <li>Supertrend Confirmation System</li>
+                <li>Fast vs Slow Supertrend</li>
+                <li>Confirmation Logic</li>
+                <li>Avoiding False Signals</li>
+              </ul>
+            </div>
+          </div>
 
-  <!-- Day 3 -->
-  <div class="cj-item">
-    <div class="cj-dot"></div>
-    <div class="cj-content">
-      <h3>Day 3</h3>
-      <ul>
-        <li>Supertrend Confirmation System</li>
-        <li>Fast vs Slow Supertrend</li>
-        <li>Confirmation Logic</li>
-        <li>Avoiding False Signals</li>
-      </ul>
-    </div>
-  </div>
+          <!-- Day 4 -->
+          <div class="cj-item">
+            <div class="cj-dot"></div>
+            <div class="cj-content">
+              <h3>Day 4</h3>
+              <ul>
+                <li>Camarilla Pivot Point Strategy</li>
+                <li>Camarilla Levels Explanation</li>
+                <li>Intraday Breakout & Reversal Zones</li>
+                <li>VWAP Confirmation</li>
+              </ul>
+            </div>
+          </div>
 
-  <!-- Day 4 -->
-  <div class="cj-item">
-    <div class="cj-dot"></div>
-    <div class="cj-content">
-      <h3>Day 4</h3>
-      <ul>
-        <li>Camarilla Pivot Point Strategy</li>
-        <li>Camarilla Levels Explanation</li>
-        <li>Intraday Breakout & Reversal Zones</li>
-        <li>VWAP Confirmation</li>
-      </ul>
-    </div>
-  </div>
-
-  <!-- Day 5 -->
-  <div class="cj-item">
-    <div class="cj-dot"></div>
-    <div class="cj-content">
-      <h3>Day 5</h3>
-      <ul>
-        <li>Risk Management & Execution Mastery</li>
-        <li>Capital Protection</li>
-        <li>Position Sizing & Trade Management</li>
-        <li>Discipline & Consistency</li>
-      </ul>
-    </div>
-  </div>
-
-</div>
-
+          <!-- Day 5 -->
+          <div class="cj-item">
+            <div class="cj-dot"></div>
+            <div class="cj-content">
+              <h3>Day 5</h3>
+              <ul>
+                <li>Risk Management & Execution Mastery</li>
+                <li>Capital Protection</li>
+                <li>Position Sizing & Trade Management</li>
+                <li>Discipline & Consistency</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
     <!-- Course Journey Section -->
     <!-- Certification Section -->
@@ -267,9 +275,11 @@ moves, avoid retail traps, and trade in alignment with smart money.
           <h2>Learn Anytime, Anywhere With Our Mobile App</h2>
 
           <p>
-            Access your <span> Power Play course on the Path2Profit mobile app</span>. Attend live sessions, watch recorded classes
-anytime, practice with real-market examples, and earn verified certificates. Our online trading
-            course free platform allows you to:
+            Access your
+            <span> Power Play course on the Path2Profit mobile app</span>.
+            Attend live sessions, watch recorded classes anytime, practice with
+            real-market examples, and earn verified certificates. Our online
+            trading course free platform allows you to:
           </p>
 
           <p>
@@ -335,11 +345,11 @@ anytime, practice with real-market examples, and earn verified certificates. Our
         <!-- Logo & Overview -->
         <div class="footer-box">
           <!-- <span class="logo-footer">Path2Profit</span><sup>®</sup> -->
-           <img class="logo-footer" src="photos/Path2Profit_Logo.png" alt="">
+          <img class="logo-footer" src="photos/Path2Profit_Logo.png" alt="" />
           <p>
-            Path2Profit is India's leading stock market learning platform, helping
-            students and traders grow with practical knowledge and expert
-            guidance.
+            Path2Profit is India's leading stock market learning platform,
+            helping students and traders grow with practical knowledge and
+            expert guidance.
           </p>
           <div class="social-icons">
             <a href="#"><i class="fab fa-facebook-f"></i></a>
@@ -355,16 +365,19 @@ anytime, practice with real-market examples, and earn verified certificates. Our
           <h3>Company Overview</h3>
           <ul>
             <li><a href="about-us.html">About Us</a></li>
-            <li><a href="Course-Intraday Setup page.html">Intraday Setup</a></li>
+            <li>
+              <a href="Course-Intraday Setup page.html">Intraday Setup</a>
+            </li>
             <li><a href="Course-Hero Zero Setup.html">Hero Zero Setup</a></li>
-            <li><a href="Course-Nifty and Banknifty.html">Nifty and Banknifty</a></li>
+            <li>
+              <a href="Course-Nifty and Banknifty.html">Nifty and Banknifty</a>
+            </li>
             <li><a href="Course-Power Play.html">Power Play</a></li>
           </ul>
         </div>
 
         <!-- Support -->
         <div class="footer-box">
-          
           <h3>Support</h3>
           <ul>
             <li><a href="Contact-Us.html">Contact Us</a></li>
@@ -390,5 +403,7 @@ anytime, practice with real-market examples, and earn verified certificates. Our
     </footer>
 
     <!-- /* ---footer----------- -->
+    <script src="media-query.js"></script>
+    <script src="navbar.js"></script>
   </body>
 </html>

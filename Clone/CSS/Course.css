@@ -269,23 +269,9 @@ header {
   color: #333;
 }
 
-/* Responsive */
-@media (max-width: 768px) {
-  .cj-container {
-    width: 92%;
-  }
-
-  .cj-content h3 {
-    font-size: 18px;
-  }
-
-  .cj-content ul li {
-    font-size: 14px;
-  }
-}
 /* <!-- Course Journey Section -->  */
 /* <!-- Certification Section -->  */
-.cert-section {
+/* .cert-section {
   padding: 15px 54px;
   background: #ffffff;
   font-family: "Segoe UI", sans-serif;
@@ -300,7 +286,6 @@ header {
   gap: 50px;
 }
 
-/* Left */
 .cert-left {
   width: 50%;
 }
@@ -334,7 +319,6 @@ header {
   color: #000;
 }
 
-/* Right */
 .cert-right {
   width: 50%;
   text-align: right;
@@ -345,10 +329,10 @@ header {
   max-width: 520px;
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
   border-radius: 6px;
-}
+} */
 
 /* Responsive */
-@media (max-width: 900px) {
+/* @media (max-width: 900px) {
   .cert-container {
     flex-direction: column;
     text-align: center;
@@ -363,7 +347,7 @@ header {
     text-align: center;
     margin-top: 40px;
   }
-}
+} */
 /* <!-- Certification Section -->  */
 
 /* <!-- Mobile App Promo Section --> */
@@ -632,3 +616,515 @@ button {
   }
 }
 /* <!-- Enquiry Section -->  */
+/* =========================
+   TABLET VIEW – 768px
+========================= */
+@media (max-width: 768px) {
+  /* Trade Like a Pro */
+  .tlp-container {
+    flex-direction: column;
+  }
+
+  .tlp-title {
+    font-size: 34px;
+  }
+
+  .tlp-buttons {
+    flex-direction: column;
+  }
+
+  .tlp-stats {
+    flex-direction: column;
+    gap: 15px;
+    margin: 20px 0;
+    padding: 15px;
+  }
+
+  /* Course Journey */
+  /* .cj-timeline {
+    padding-left: 30px;
+  }
+
+  .cj-dot {
+    left: -28px;
+  }
+
+  .cj-content {
+    margin-left: 25px;
+  } */
+
+  /* App Section */
+  .app-container {
+    flex-direction: column;
+    padding: 30px;
+  }
+
+  .app-left,
+  .app-right {
+    width: 100%;
+    text-align: center;
+  }
+
+  .phones {
+    height: 300px;
+  }
+
+  .phone-one {
+    left: 20px;
+    width: 180px;
+  }
+
+  /* Enquiry Section */
+  .enq-section {
+    padding: 40px 20px;
+  }
+
+  .enq-container {
+    flex-direction: column;
+  }
+
+  .enq-left,
+  .enq-right {
+    width: 100%;
+    height: fit-content;
+  }
+
+  .mentor-img {
+    height: auto;
+  }
+
+  .row {
+    flex-direction: column;
+  }
+}
+
+/* =========================
+   MOBILE VIEW – 480px
+========================= */
+@media (max-width: 480px) {
+  /* Trade Like a Pro */
+  .tlp-title {
+    font-size: 26px;
+  }
+
+  .tlp-subtext,
+  .tlp-left p {
+    font-size: 13.5px;
+  }
+
+  .btn-orange {
+    width: 100%;
+  }
+
+  .stat-box h3 {
+    font-size: 18px;
+  }
+
+  /* Course Journey */
+  .cj-title {
+    font-size: 26px;
+  }
+
+  .cj-content h3 {
+    font-size: 16px;
+  }
+
+  .cj-content ul li {
+    font-size: 13px;
+  }
+
+  /* App Section */
+  .app-left h2 {
+    font-size: 22px;
+  }
+
+  .app-left p {
+    font-size: 13px;
+  }
+
+  .phones {
+    height: 240px;
+  }
+
+  .phone-one {
+    width: 150px;
+    left: 10px;
+  }
+
+  /* Enquiry Section */
+  .enq-right h2 {
+    font-size: 22px;
+  }
+
+  form label {
+    font-size: 12px;
+  }
+
+  form input,
+  form select {
+    padding: 10px;
+  }
+
+  button {
+    font-size: 14px;
+    padding: 12px;
+  }
+}
+/* =========================
+   FORM RESPONSIVE FIX
+========================= */
+
+/* Tablet */
+@media (max-width: 768px) {
+  .enq-right form {
+    padding: 22px;
+    border-radius: 14px;
+  }
+
+  .enq-right h2 {
+    text-align: center;
+  }
+
+  .enq-right p {
+    text-align: center;
+  }
+
+  .row {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  form input,
+  form select {
+    font-size: 14px;
+    padding: 11px;
+  }
+
+  .check {
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+
+  button {
+    font-size: 15px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+  .enq-right form {
+    padding: 18px;
+    border-radius: 12px;
+  }
+
+  form label {
+    font-size: 12px;
+    margin-bottom: 4px;
+  }
+
+  form input,
+  form select {
+    font-size: 13px;
+    padding: 10px;
+    border-radius: 8px;
+  }
+
+  .enq-right h2 {
+    font-size: 20px;
+  }
+
+  .enq-right p {
+    font-size: 13px;
+  }
+
+  .check {
+    padding: 10px;
+    font-size: 12px;
+  }
+
+  .check label {
+    white-space: normal;
+  }
+
+  button {
+    font-size: 14px;
+    padding: 12px;
+    border-radius: 10px;
+  }
+}
+/* =========================
+   BADGEE RESPONSIVE SIZE
+========================= */
+
+/* Tablet */
+@media (max-width: 768px) {
+  .badgee {
+    font-size: 11px;
+    padding: 6px 10px;
+    border-radius: 16px;
+  }
+
+  .avatars img {
+    width: 20px;
+  }
+
+  .ratingg {
+    top: 40px;
+    left: 15px;
+  }
+
+  .online {
+    top: 110px;
+    right: 12px;
+  }
+
+  .happy {
+    bottom: 70px;
+    left: 12px;
+  }
+
+  .mentor {
+    bottom: 35px;
+    right: 12px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+  .badgee {
+    font-size: 10px;
+    padding: 5px 8px;
+    border-radius: 14px;
+  }
+
+  .avatars img {
+    width: 16px;
+    margin-left: -6px;
+  }
+
+  .ratingg {
+    top: 25px;
+    left: 10px;
+  }
+
+  .online {
+    top: 80px;
+    right: 8px;
+  }
+
+  .happy {
+    bottom: 50px;
+    left: 8px;
+  }
+
+  .mentor {
+    bottom: 20px;
+    right: 8px;
+  }
+}
+/* =========================
+   TABLET – 768px
+========================= */
+@media (max-width: 768px) {
+  /* Trade Like a Pro */
+  .tlp-container {
+    flex-direction: column;
+    gap: 25px;
+  }
+
+  .tlp-left,
+  .tlp-right {
+    width: 100%;
+  }
+
+  .tlp-title {
+    font-size: 34px;
+  }
+
+  .tlp-buttons {
+    flex-direction: column;
+  }
+
+  .tlp-stats {
+    flex-direction: column;
+    gap: 12px;
+    margin: 20px 0;
+    padding: 15px;
+  }
+
+  /* Course Journey */
+  .cj-container {
+    width: 92%;
+  }
+
+  .cj-timeline {
+    padding-left: 30px;
+  }
+
+  .cj-dot {
+    left: -26px;
+  }
+
+  .cj-content {
+    margin-left: 22px;
+  }
+
+  .cj-content h3 {
+    font-size: 18px;
+  }
+
+  .cj-content ul li {
+    font-size: 14px;
+  }
+}
+
+/* =========================
+   MOBILE – 480px
+========================= */
+@media (max-width: 480px) {
+  /* Trade Like a Pro */
+  .tlp-title {
+    font-size: 26px;
+  }
+
+  .tlp-subtext,
+  .tlp-left p {
+    font-size: 13px;
+  }
+
+  .btn-orange {
+    width: 100%;
+  }
+
+  .stat-box h3 {
+    font-size: 18px;
+  }
+
+  .tlp-right {
+    padding: 15px;
+  }
+
+  /* Course Journey */
+  .cj-title {
+    font-size: 26px;
+    text-align: center;
+  }
+
+  .cj-timeline {
+    padding-left: 22px;
+  }
+
+  .cj-dot {
+    left: -10px;
+    width: 12px;
+    height: 12px;
+  }
+
+  .cj-content {
+    margin-left: 18px;
+  }
+
+  .cj-content h3 {
+    font-size: 16px;
+  }
+
+  .cj-content ul li {
+    font-size: 13px;
+    line-height: 1.6;
+  }
+}
+/* =========================
+   TABLET – 768px
+========================= */
+@media (max-width: 768px) {
+  /* FORM – same size inputs */
+  form input,
+  form select {
+    height: 45px;
+    padding: 10px 14px;
+    font-size: 14px;
+    border-radius: 10px;
+  }
+
+  .row {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  /* APP SECTION – center phone image */
+  .app-right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .phones {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 280px;
+  }
+
+  .phone {
+    position: relative;
+    width: 180px;
+    top: 0;
+    left: 0;
+    transform: none;
+  }
+
+  .phone-one {
+    left: 0;
+  }
+  .cj-section {
+    padding: 0px 0px;
+  }
+}
+
+/* =========================
+   MOBILE – 480px
+========================= */
+@media (max-width: 480px) {
+  /* FORM – uniform input size */
+  form input,
+  form select {
+    height: 40px;
+    padding: 10px 12px;
+    margin: 0px 80px 0px 0px;
+    font-size: 13px;
+    border-radius: 8px;
+  }
+
+  form label {
+    font-size: 12px;
+  }
+  .cj-section {
+    padding: 0px 0px;
+  }
+
+  /* APP SECTION – perfectly centered phone */
+  .app-right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .phones {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 170px;
+  }
+
+  .phone {
+    position: relative;
+    width: 150px;
+    top: 0;
+    left: 0;
+    transform: none;
+  }
+
+  .phone-one {
+    left: 0;
+  }
+}

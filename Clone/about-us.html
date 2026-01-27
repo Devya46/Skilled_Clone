@@ -27,16 +27,27 @@
     <header>
       <!-- Top Bar -->
       <div class="top-bar">
-        <img class="logo" src="photos/Path2Profit_Logo.png" alt="" />
+  <img class="logo" src="photos/Path2Profit_Logo.png" alt="">
 
-        <div class="top-right">
-          <button class="login-btn">Login</button>
-          <button class="signup-btn">Signup</button>
-        </div>
-      </div>
+  <div class="menu-icon" id="menuIcon">
+    <i class="fa-solid fa-bars"></i> 
+  </div>
+
+  <div class="top-right">
+    <button onclick="location.href='about-us.html'" class="login-btn">Login</button>
+    <button class="signup-btn">Signup</button>
+  </div>
+</div>
+
+      
+
 
       <!-- Navigation Bar -->
-      <nav class="nav-bar">
+       <!-- <div class="menu-icon" id="menuToggle">
+  <i class="fa-solid fa-bars"></i>
+</div> -->
+
+      <nav class="nav-bar" id="mobileNav">
         <a href="index.html"><i class="fa-solid fa-briefcase"></i> Home</a>
         <a href="about-us.html"><i class="fa-solid fa-lock"></i> About Us</a>
         <div class="nav-dropdown">
@@ -51,10 +62,15 @@
     </div>
   </div>
         <a href="Faq.html"><i class="fa-solid fa-desktop"></i> FAQ </a>
-        <a href="Contact-Us.html"><i class="fa-solid fa-chart-line"></i> Contact Us</a>
+        <a href="Contact-Us.html"><i class="fa-solid fa-chart-line"></i>Contact Us</a>
+        <div class="mobile-auth">
+  <button class="login-btn">Login</button>
+  <button class="signup-btn">Signup</button>
+</div>
+
       </nav>
     </header>
-    <!-- HEADER  -->
+    <!-- HEADER  --> 
     <!-- ----------- Heading---------  -->
     <section class="p2p-about">
       <div class="p2p-overlay"></div>
@@ -393,7 +409,7 @@
       </div>
       
     </div>
-      
+  </div>      </section>
     </section>
     <!-- ===== Testimonials Section ===== -->
      <!-- ===== FAQ SECTION ===== -->
@@ -504,6 +520,7 @@ them suitable for beginners and professionals alike.
         </div>
       </div>
     </section>
+  </div>
 <!-- ===== FAQ SECTION ===== -->
 
     <!-- footer---------  -->
@@ -574,9 +591,8 @@ them suitable for beginners and professionals alike.
 
 
 
-
-
-
     <script src="click.js"></script>
+    <script src="media-query.js"></script>
+           <script src="navbar.js"></script>
   </body>
 </html>

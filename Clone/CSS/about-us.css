@@ -449,3 +449,172 @@ header {
   }
 }
 /* Our Impact Section */
+/* =========================
+   TABLET VIEW – 768px
+========================= */
+@media (max-width: 768px) {
+  /* About Section */
+  .about-card {
+    flex-direction: column;
+    padding: 20px;
+    text-align: center;
+  }
+
+  .about-content,
+  .about-image {
+    width: 100%;
+  }
+
+  .about-image {
+    margin-top: 25px;
+  }
+
+  .btn-group {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  /* What We Do */
+  .dark-cards {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .dark-audience {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  /* Mission */
+  .slant-row {
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-left: 0 !important;
+  }
+
+  .mission-item {
+    max-width: 100%;
+  }
+
+  /* Impact */
+  .p2p-impact {
+    flex-direction: column;
+    text-align: center;
+    padding: 50px 5%;
+  }
+
+  .impact-right {
+    margin-left: 0;
+    padding: 0;
+    width: 100%;
+  }
+
+  .impact-box {
+    width: 100%;
+  }
+
+  /* Testimonials */
+  .reviews-masonry {
+    grid-template-columns: 1fr;
+  }
+
+  /* FAQ */
+  .ttx-faq-grid {
+    flex-direction: column;
+  }
+
+  .ttx-faq-col {
+    width: 100%;
+  }
+
+  /* Footer */
+  .footer-container {
+    flex-direction: column;
+    text-align: center;
+    gap: 25px;
+  }
+
+  .subscribe-box {
+    flex-direction: column;
+  }
+}
+
+/* =========================
+   MOBILE VIEW – 480px
+========================= */
+@media (max-width: 480px) {
+  /* About Heading */
+  .p2p-content h2 {
+    font-size: 24px;
+  }
+
+  .p2p-content h3 {
+    font-size: 15px;
+  }
+
+  .p2p-content p {
+    font-size: 13.5px;
+  }
+
+  /* About Section */
+  .about-content h1 {
+    font-size: 24px;
+  }
+
+  .about-content h3 {
+    font-size: 16px;
+  }
+
+  .about-content p {
+    font-size: 13.5px;
+  }
+
+  /* What We Do */
+  .dark-cards {
+    grid-template-columns: 1fr;
+  }
+
+  .dark-card {
+    padding: 18px;
+  }
+
+  /* Mission */
+  .mission-item {
+    padding: 18px;
+  }
+
+  .mission-item span {
+    font-size: 24px;
+  }
+
+  /* Impact */
+  .impact-left h2 {
+    font-size: 22px;
+  }
+
+  .impact-box h3 {
+    font-size: 22px;
+  }
+
+  /* Buttons */
+  .btn-group a {
+    font-size: 14px;
+    padding: 10px;
+  }
+
+  /* FAQ */
+  .ttx-faq-btn {
+    font-size: 14px;
+  }
+
+  /* Footer */
+  .footer-box h3 {
+    font-size: 15px;
+  }
+
+  .footer-box p,
+  .footer-box a {
+    font-size: 13px;
+  }
+}
+/* =========================
+   END OF CSS

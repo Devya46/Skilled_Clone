@@ -29,13 +29,19 @@
       <div class="top-bar">
         <img class="logo" src="photos/Path2Profit_Logo.png" alt="" />
 
+        <div class="menu-icon" id="menuIcon">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+
         <div class="top-right">
-          <button class="login-btn">Login</button>
+          <button onclick="location.href = 'about-us.html'" class="login-btn">
+            Login
+          </button>
           <button class="signup-btn">Signup</button>
         </div>
       </div>
-      <!-- Navigation Bar -->
-      <nav class="nav-bar">
+
+      <nav class="nav-bar" id="mobileNav">
         <a href="index.html"><i class="fa-solid fa-briefcase"></i> Home</a>
         <a href="about-us.html"><i class="fa-solid fa-lock"></i> About Us</a>
         <div class="nav-dropdown">
@@ -52,11 +58,15 @@
         </div>
         <a href="Faq.html"><i class="fa-solid fa-desktop"></i> FAQ </a>
         <a href="Contact-Us.html"
-          ><i class="fa-solid fa-chart-line"></i> Contact Us</a
+          ><i class="fa-solid fa-chart-line"></i>Contact Us</a
         >
+        <div class="mobile-auth">
+          <button class="login-btn">Login</button>
+          <button class="signup-btn">Signup</button>
+        </div>
       </nav>
     </header>
-    <!-- ---- Header----  -->
+    <!-- HEADER  -->
     <!-- FAQ Header -->
     <section class="faq-header">
       <span class="faq-badge">
@@ -263,5 +273,7 @@
 
     <!-- /* ---footer----------- -->
     <script src="click.js"></script>
+    <script src="media-query.js"></script>
+    <script src="navbar.js"></script>
   </body>
 </html>
