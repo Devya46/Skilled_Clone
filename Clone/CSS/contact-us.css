@@ -212,3 +212,22 @@ header {
     font-size: 13px;
   }
 }
+.popup {
+  position: fixed;
+  top: 54%;
+  left: 70%;
+  transform: translate(-120%, -50%);
+  background: white;
+  padding: 60px 113px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  display: none;
+  z-index: 999;
+  font-size: 20px;
+}
+
+.popup button {
+  margin-top: 10px;
+  padding: 6px 14px;
+  cursor: pointer;
+}

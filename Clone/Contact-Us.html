@@ -99,7 +99,14 @@
           <input type="tel" placeholder="+91 00000 00000" />
           <textarea placeholder="Query"></textarea>
 
-          <button>Submit Form</button>
+          <form onsubmit="showPopup(event)">
+            <button type="submit">Submit</button>
+          </form>
+
+          <div id="popup" class="popup">
+            <p>We will resolve your query soon!</p>
+            <button onclick="closePopup()">OK</button>
+          </div>
         </div>
       </div>
 
@@ -116,7 +123,7 @@
         <div class="p2p-details">
           <div>📍 JP Nagar, Bengaluru, Karnataka</div>
           <div>📞 +91 72200 22266</div>
-          <div>✉️ update@trendytraders.in</div>
+          <div>✉️ update@path2profit.in</div>
         </div>
       </div>
     </section>
@@ -187,5 +194,15 @@
     <!-- /* ---footer----------- -->
     <script src="media-query.js"></script>
     <script src="navbar.js"></script>
+    <script>
+      function showPopup(event) {
+        event.preventDefault();
+        document.getElementById("popup").style.display = "block";
+      }
+
+      function closePopup() {
+        document.getElementById("popup").style.display = "none";
+      }
+    </script>
   </body>
 </html>

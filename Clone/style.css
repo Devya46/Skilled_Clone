@@ -1088,6 +1088,7 @@ hr {
 .featured-course-track {
   display: flex;
   width: max-content;
+  gap: 30px;
   animation: scrollRight 20s linear infinite;
 }
 
@@ -1108,6 +1109,7 @@ hr {
   overflow: hidden;
   box-shadow: 0 3px 0px rgba(0, 0, 0, 0.4);
   padding: 12px;
+  border: 1px solid #00000069;
 }
 
 /* Image box */
@@ -1187,22 +1189,50 @@ hr {
   color: #666;
 }
 
+.buy-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 12px;
+  gap: 10px;
+}
+
+/* Price */
 .featured-course-price {
   display: flex;
-  justify-content: flex-end;
-  gap: 10px;
   align-items: center;
+  gap: 8px;
 }
 
-.featured-course-new-price {
+.featured-course-price .new-price {
   font-size: 18px;
-  font-weight: bold;
+  font-weight: 700;
+  color: #16a34a;
 }
 
-.featured-course-old-price {
+.featured-course-price .old-price {
   font-size: 14px;
-  color: #888;
+  color: #999;
   text-decoration: line-through;
+}
+
+/* Button */
+.buy-btn {
+  padding: 10px 22px;
+  background: linear-gradient(135deg, #ff7a18, #ff3d00);
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s ease;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+.buy-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.25);
 }
 
 /* Star color */
