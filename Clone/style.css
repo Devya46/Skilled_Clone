@@ -312,7 +312,7 @@ img {
 .slides {
   display: flex;
   width: 100%;
-  animation: slideAnim 20s infinite;
+  animation: slideAnim 20s linear infinite;
 }
 
 .slide {
@@ -476,6 +476,8 @@ img {
   display: flex;
   justify-content: space-around;
   padding: auto;
+  align-items: center;
+  padding: 40px 12%;
 }
 
 .course-card {
@@ -1088,16 +1090,20 @@ hr {
 .featured-course-track {
   display: flex;
   width: max-content;
-  gap: 30px;
   animation: scrollRight 20s linear infinite;
 }
 
+.featured-course-card {
+  margin-right: 15px;
+  flex-shrink: 0;
+}
+
 @keyframes scrollRight {
-  from {
-    transform: translateX(-50%);
+  0% {
+    transform: translateX(0);
   }
-  to {
-    transform: translateX(0%);
+  100% {
+    transform: translateX(-30%);
   }
 }
 
@@ -2616,6 +2622,7 @@ hr {
 @media (max-width: 768px) {
   .footer {
     padding: 40px 0 20px;
+    background-image: none;
   }
 
   .footer-container {
@@ -2666,11 +2673,16 @@ hr {
   .footer-bottom {
     font-size: 13px;
     margin-top: 20px;
+    color: black;
+    font-style: italic;
   }
 }
 
 /* Small phones */
 @media (max-width: 480px) {
+  .footer {
+    background-image: none;
+  }
   .footer-box h3 {
     font-size: 16px;
   }
@@ -2682,6 +2694,8 @@ hr {
 
   .footer-bottom {
     font-size: 12px;
+    color: black;
+    font-style: italic;
   }
 }
 
