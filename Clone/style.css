@@ -298,16 +298,21 @@ img {
 
 .mainscreen {
   width: 100%;
+  height: auto;
   overflow: hidden;
+  margin: 0;
+  padding: 0;
 }
 
 .slider {
   width: 100%;
-  max-width: 1512px;
-  height: 745px; /* your selected area height */
-  margin: auto;
+  /* max-width: 1512px; */
+  /* height: 745px; */
+  height: auto;
+  margin: 0 auto;
   overflow: hidden;
   position: relative;
+  display: block;
 }
 
 .slides {
@@ -327,7 +332,7 @@ img {
   object-fit: contain; /* show full image */
   background: #000; /* optional: black space around image */
   display: block;
-  margin-top: 0;
+  /* margin-top: 0; */
 }
 
 /* Animation */
@@ -357,13 +362,11 @@ img {
 /* ================= TABLET & MOBILE ================= */
 @media (max-width: 768px) {
   .slider {
-    aspect-ratio: 16 / 9;
   }
 }
 
 @media (max-width: 480px) {
   .slider {
-    aspect-ratio: 16 / 9;
   }
 }
 /* ================= MAIN SLIDER ================= */
