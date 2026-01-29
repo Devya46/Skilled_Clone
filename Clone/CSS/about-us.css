@@ -450,8 +450,20 @@ header {
 }
 /* Our Impact Section */
 /* =========================
+
    TABLET VIEW – 768px
 ========================= */
+@media (max-width: 480px) {
+  .impact-right {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+}
+
 @media (max-width: 768px) {
   /* About Section */
   .about-card {
