@@ -5,6 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <title>Path2Profit | Stock Market Learning</title>
+    <link
+      rel="shortcut icon"
+      href="photos/favicon-32x32.png"
+      type="image/x-icon"
+    />
     <!-- <link rel="stylesheet" href="style.css" /> -->
     <link rel="stylesheet" href="style.css" />
     <!-- <link rel="stylesheet" href="CSS/media-query.css"> -->
@@ -25,6 +30,14 @@
     />
   </head>
   <body>
+    <!-- --------loader------ -->
+    <div id="site-loader">
+      <div class="loader-content">
+        <img src="photos/Path2Profit_Logo.png" alt="Path2Profit Logo" />
+        <div class="spinner"></div>
+      </div>
+    </div>
+    <!-- ---------- loader--------  -->
     <!-- HEADER  -->
     <header>
       <!-- Top Bar -->
@@ -1419,7 +1432,7 @@
     </footer>
 
     <!-- /* ---footer----------- -->
-
+    <script src="loader.js"></script>
     <script src="script.js"></script>
     <script>
       const courseBtn = document.querySelector(".nav-dropdown > a");
